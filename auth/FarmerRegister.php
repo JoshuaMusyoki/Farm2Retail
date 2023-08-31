@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../portal_files/bootstrap.min.css">
     <script>
         function state() {
-            var a = document.getElementById('states').value;
+            //var a = document.getElementById('states').value;
+            var a=document.getElementById('states').value;
             if (a === 'ANDAMAN & NICOBAR ISLANDS') {
                 var array = ['Andamans', 'Nicobars'];
             } else if (a === 'ANDHRA PRADESH') {
@@ -87,7 +88,7 @@
                 string = string + "<option>" + array[i] + "</option>";
 
             }
-            string = "<select nmae = 'lol'>" + string + "</select>"
+            string = "<select name = 'lol'>" + string + "</select>"
             document.getElementById('district').innerHTML = string;
         }
     </script>
